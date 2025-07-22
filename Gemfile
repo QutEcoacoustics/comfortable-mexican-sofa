@@ -16,7 +16,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "listen",       "~> 3.1.5"
+  gem "listen",       "~> 3" # AT 2025 changed
   gem "web-console",  "~> 3.5.1"
 end
 

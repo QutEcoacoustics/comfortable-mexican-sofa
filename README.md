@@ -1,5 +1,14 @@
 # ComfortableMexicanSofa
 
+***
+AT 2025: ComfortableMexicanSofa is deprecated.
+We cloned it into `vendor/comfortable-mexican-sofa` to avoid issues with the gem.
+Some changes are made, but we're not committing the git history.
+It was cloned from this hash: 8f7e425a06aca9cfa8e21de6b7a10669c8495fc3
+Any changes here won't be used automatically. You have to `bundle install comfortable_mexican_sofa`
+to copy the gem into the system gem directory.
+***
+
 ComfortableMexicanSofa is a powerful Ruby on Rails 5.2+ CMS (Content Management System) Engine
 
 [![Gem Version](https://img.shields.io/gem/v/comfortable_mexican_sofa.svg?style=flat)](http://rubygems.org/gems/comfortable_mexican_sofa)

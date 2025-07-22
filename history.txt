@@ -1,0 +1,12 @@
+8f7e425a fix seeds exporter (#911)
+e1160ce8 Bump comfortable_mexican_sofa to 2.0.19
+ef0b230c fixing issue with rack 2.0.8
+58c4ee32 will this works with sprokets 4?
+3d0ea8e7 syncing locale files
+ac533da3 feat(I18n): added arabic locale (#897)
+ecba0824 bumping puma
+fd7de7e2 bumping sqlite gem
+a1584e9c rails 6 needs ruby 2.5+
+c04fa6f9 tests green locally for rails 6.0
+origin	https://github.com/comfy/comfortable-mexican-sofa.git (fetch)
+origin	https://github.com/comfy/comfortable-mexican-sofa.git (push)

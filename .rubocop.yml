@@ -7,10 +7,6 @@ AllCops:
     - test/fixtures/**/*
     - tmp/**/*
 
-# -- Performance ---------------------------------------------------------------
-Performance/Casecmp:
-  Enabled: false
-
 # -- Metrics -------------------------------------------------------------------
 Metrics/PerceivedComplexity:
   Enabled: false
@@ -24,7 +20,7 @@ Metrics/MethodLength:
 Metrics/ParameterLists:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
 
 Metrics/CyclomaticComplexity:
@@ -49,7 +45,7 @@ Layout/MultilineMethodCallIndentation:
 Layout/MultilineHashBraceLayout:
   Enabled: false
 
-Layout/IndentArray:
+Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 
 Layout/EmptyLinesAroundModuleBody:
@@ -61,7 +57,7 @@ Layout/EmptyLinesAroundExceptionHandlingKeywords:
 Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: empty_lines_except_namespace
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: false
 
 Layout/AccessModifierIndentation:
@@ -96,5 +92,5 @@ Style/AsciiComments:
   Enabled: false
 
 # -- Naming --------------------------------------------------------------------
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: false

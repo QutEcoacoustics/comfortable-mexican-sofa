@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-class Comfy::Cms::Fragment < ActiveRecord::Base
+class Comfy::Cms::Fragment < ApplicationRecord
 
   self.table_name = "comfy_cms_fragments"
 
   has_many_attached :attachments
 
-  serialize :content
+  serialize :content, coder: Psych # AT 2025, coder required
 
   attr_reader :files
 
@@ -23,8 +23,8 @@ class Comfy::Cms::Fragment < ActiveRecord::Base
 
   # -- Validations -------------------------------------------------------------
   validates :identifier,
-    presence:   true,
-    uniqueness: { scope: :record }
+            presence: true,
+            uniqueness: { scope: :record }
 
   # -- Instance Methods --------------------------------------------------------
 
@@ -44,7 +44,8 @@ class Comfy::Cms::Fragment < ActiveRecord::Base
 protected
 
   def remove_attachments
-    return unless @file_ids_destroy.present?
+    return if @file_ids_destroy.blank?
+
     attachments.where(id: @file_ids_destroy).destroy_all
   end
 
